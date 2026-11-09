@@ -1,0 +1,22 @@
+
+
+projeto :Organização financeira
+
+O que o sistema precisa fazer:
+Ele precisa ter uma pagina de login para registrar os dados financeiro,
+uma parte que a pessoa coloca a forma que ela gastou cartao Debito, Credito ou pix
+aparecer q foi registrado e mostrar o resumo dtotal de gastos do mes e no que foi gasto
+esse registro tem q ter valor , oq foi gasto (descrição) e o lado aparecer a forma q gastou 
+e a data
+
+Que tipo de aplicação é?
+Full Stack
+
+linguagens:
+Java Script, sql, html e css
+banco:
+mySQl ou oracle developer
+
+front = mostra as paginas visuais no geral
+back = faz as validações e fazer o sistema de login,  e a comunicação para registrar os dados no backend 
+
