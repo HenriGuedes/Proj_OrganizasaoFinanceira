@@ -26,6 +26,8 @@ formulario.addEventListener("submit", function (event) {
       }
       console.log("Login realizado com sucesso", data);
       alert("Login realizado");
+      //Direcionamento para a pag cadastro
+      window.location.href = "./cadastro.html";
     })
     .catch((error) => {
       console.error("erro ao fazer login", error);
