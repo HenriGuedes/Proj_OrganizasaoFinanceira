@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Finanças Pessoais</title>
+    <link rel="stylesheet" href="/Front/login.css" />
+    <!-- Fonte Google Fonts (Inter) para um visual moderno -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="login-container">
+      <div class="login-header">
+        <div class="logo-icon">💰</div>
+        <h1>Controle Financeiro</h1>
+        <p>Entre com suas credenciais para gerenciar seus gastos</p>
+      </div>
+
+      <form class="login-form" id="formLogin">
+        <div class="input-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" placeholder="seu@email.com" required />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="••••••••"
+            required
+          />
+        </div>
+
+        <div class="form-actions">
+          <label class="remember-me">
+            <input type="checkbox" /> Lembrar de mim
+          </label>
+          <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="btn-login">Entrar</button>
+      </form>
+
+      <div class="login-footer">
+        <p>Ainda não tem uma conta? <a href="./cadLog.html">Cadastre-se</a></p>
+      </div>
+    </div>
+  </body>
+  <script src="./login.js"></script>
+</html>
