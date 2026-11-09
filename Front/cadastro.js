@@ -9,16 +9,13 @@ formulario.addEventListener("submit", function (event) {
   var dataDeregistro = document.getElementById("date").value;
   var usuarioId = localStorage.getItem("usuarioId");
 
-  var objGastos = [
-    {
-      user_id: usuarioId,
-      desc: descricao,
-      valor: valor,
-      metodoDePagamento: metodoDePagamento,
-      dataDeregistro: dataDeregistro,
-    },
-  ];
-
+  var objGastos = {
+    user_id: usuarioId,
+    desc: descricao,
+    valor: valor,
+    metodoDePagamento: metodoDePagamento,
+    dataDeregistro: dataDeregistro,
+  };
   fetch("http://localhost:3003/gastos", {
     // fecth com o metodo post mandando os dados para o back
     method: "POST",

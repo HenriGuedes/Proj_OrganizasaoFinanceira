@@ -15,7 +15,7 @@ app.post("/gastos", async function (req, res) {
   const { user_id, desc, valor, metodoDePagamento, dataDeregistro } = req.body;
 
   const { data, error } = await supabase
-    .from("gasto")
+    .from("Gasto")
     .insert([
       {
         user_id: user_id,
@@ -27,7 +27,8 @@ app.post("/gastos", async function (req, res) {
     ])
     .select();
   if (error) {
-    return res.status(400).json({ erro: message });
+    console.log("Erro retornado pelo Supabase:", error);
+    return res.status(400).json({ erro: error.message });
   }
   return res.status(201).json({
     mensagem: "Gastos cadastrado e salvo com sucesso",
