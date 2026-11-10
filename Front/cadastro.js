@@ -1,5 +1,11 @@
 var formulario = document.getElementById("formGasto");
 
+
+
+
+
+
+// faz o cadastro dos gastos do usuario nno banco 
 formulario.addEventListener("submit", function (event) {
   // tipo "submit" de envio
   event.preventDefault(); // trava o recarregamento da pag

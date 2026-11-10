@@ -35,6 +35,8 @@ form.addEventListener("submit", function (event) {
           // Agora sim, salvamos no localStorage do navegador do usuário:
           localStorage.setItem("usuarioId", userId);
           alert("Cadastrado com sucesso!");
+          window.location.href = "/Proj_OrganizasaoFinanceira/Front/cadastro.html";
+
         } else if (data.erro) {
           alert("Erro no cadastro: " + data.erro);
         }
